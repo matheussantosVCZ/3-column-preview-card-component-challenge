@@ -5,7 +5,7 @@
 }
 
 .container {
-    height: 1440px;
+    min-height: 100vh;
     align-items: center; /* alinha os intens no centro*/
     display: flex; /*Faz com que os cards fiquem lado a lado*/
     flex-direction: row; /*a direção fica um ao lado do outro - horizontal ou vertical - colunas*/
