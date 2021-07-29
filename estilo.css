@@ -1,4 +1,3 @@
-
 * {
     box-sizing: border-box;
     padding: 0;
@@ -6,14 +5,11 @@
 }
 
 .container {
-    height: 1440px;
+    min-height: 100vh;
     align-items: center; /* alinha os intens no centro*/
     display: flex; /*Faz com que os cards fiquem lado a lado*/
     flex-direction: row; /*a direção fica um ao lado do outro - horizontal ou vertical - colunas*/
     justify-content: center; /*Ele vai alinhar na direção que esta sendo exibida do flex-direction:*/
-   
-
-
 }
 
 .caixasedan {
@@ -22,17 +18,13 @@
     padding: 40px;
     border-radius: 10px 0px 0px 10px; /*Config para Arrendondar as bordas*/
     height: 400px; /*altura*/
-    
 }
 
 .caixasuv {
     background-color: hsl(184, 100%, 22%);
     width: 250px;  /*largura*/
     padding: 40px;
-    height: 400px; /*altura*/
-    
-    
-    
+    height: 400px; /*altura*/    
 }
 
 .caixaluxo {
@@ -41,64 +33,58 @@
     padding: 40px;
     border-radius: 0px 10px 10px 0px; /*Config para Arrendondar as bordas*/
     height: 400px; /*altura*/
-   
 }
 
 
 /* Tags de Textos*/
 h3 {
-font-family:'Big Shoulders Display', cursive;
-text-transform: uppercase;
-font-size: 30px;
-color: rgb(255, 255, 255);
-
+    font-family:'Big Shoulders Display', cursive;
+    text-transform: uppercase;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
 }
-
-
 
 p {
-font-family: 'Lexend Deca' , 'sans-serif';
-font-size: 15px;
-color: hsla(0, 0%, 100%, 0.75);
-margin-top: 30px;
-
+    font-family: 'Lexend Deca' , 'sans-serif';
+    font-size: 15px;
+    color: hsla(0, 0%, 100%, 0.75);
+    margin-top: 30px;
 }
 
-
 .btna {
-/**Config. e personalização dos Botões**/
-background-color: ghostwhite;;
-border: 2px;
-border-radius: 30px;
-padding: 10px 30px;
-cursor: pointer;
-transition: all 0.4s ease-in-out;
-margin-top: 50px; /*alinhar e espaçar o botão*/
+    /**Config. e personalização dos Botões**/
+    background-color: ghostwhite;;
+    border: 2px;
+    border-radius: 30px;
+    padding: 10px 30px;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+    margin-top: 50px; /*alinhar e espaçar o botão*/
 
 
-/*Person. do Texto dentro do Botão*/
-font-family: 'Lexend Deca' , 'sans-serif';
-font-size: 13px;
-border: 2px solid rgb(255, 255, 255);
-color:hsl(31, 77%, 52%);
+    /*Person. do Texto dentro do Botão*/
+    font-family: 'Lexend Deca' , 'sans-serif';
+    font-size: 13px;
+    border: 2px solid rgb(255, 255, 255);
+    color:hsl(31, 77%, 52%);
 }
 
 
 .btnb {
-/*Config. e personalização dos Botões*/
-background-color: ghostwhite;
-border: 2px solid ;
-border-radius: 30px;
-padding: 10px 30px;
-cursor: pointer;
-transition: all 0.4s ease-in-out;
-margin-top: 50px;  /*alinhar e espaçar o botão*/
+    /*Config. e personalização dos Botões*/
+    background-color: ghostwhite;
+    border: 2px solid ;
+    border-radius: 30px;
+    padding: 10px 30px;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+    margin-top: 50px;  /*alinhar e espaçar o botão*/
 
-/**Person. do Texto dentro do Botão**/
-font-family: 'Lexend Deca' , 'sans-serif';
-font-size: 13px;
-border: 2px solid rgb(255, 255, 255);
-color: hsl(184, 100%, 22%);
+    /**Person. do Texto dentro do Botão**/
+    font-family: 'Lexend Deca' , 'sans-serif';
+    font-size: 13px;
+    border: 2px solid rgb(255, 255, 255);
+    color: hsl(184, 100%, 22%);
 }
 
 .btnc {
@@ -116,11 +102,8 @@ color: hsl(184, 100%, 22%);
     font-family: 'Lexend Deca' , 'sans-serif';
     font-size: 13px;
     border: 2px solid rgb(255, 255, 255);
-    color: hsl(179, 100%, 13%);
-   
+    color: hsl(179, 100%, 13%);  
 }
-
-
 
 /** Config. Ajuste das Caixas - Tem que estudar**/
 
@@ -141,25 +124,16 @@ color: hsl(184, 100%, 22%);
     color: hsl(0, 0%, 95%);
 }
 
-
 /*mobile*/
 
-  @media (max-width: 950px) {
+@media (max-width: 950px) {
     .container {
       flex-direction:column;
     }
-  }
- 
-  @media (max-width: 950px) {
-    .caixasedan {
-        border-radius: 10px 10px 0px 0px;
-
-  }
-}
-
-@media (max-width: 950px) {
     .caixaluxo {
         border-radius: 0px 0px 10px 10px;
-
-  }
+    }
+    .caixasedan {
+        border-radius: 10px 10px 0px 0px;
+    }
 }
