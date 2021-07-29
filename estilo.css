@@ -126,22 +126,14 @@ p {
 
 /*mobile*/
 
-  @media (max-width: 950px) {
+@media (max-width: 950px) {
     .container {
       flex-direction:column;
     }
-  }
- 
-  @media (max-width: 950px) {
-    .caixasedan {
-        border-radius: 10px 10px 0px 0px;
-
-  }
-}
-
-@media (max-width: 950px) {
     .caixaluxo {
         border-radius: 0px 0px 10px 10px;
-
-  }
+    }
+    .caixasedan {
+        border-radius: 10px 10px 0px 0px;
+    }
 }
